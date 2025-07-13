@@ -12,12 +12,13 @@ class DummyUserSeeder extends Seeder
     /**
      * Run the database seeds.
      */
-    public function run(): voi
+    public function run(): void
     {
+        User::truncate();
         User::create([
-            'name' => 'Admin',
-            'email' => 'admin@example.com',
-            'password' => Hash::make('dummywebbps')
+            'name' => 'Dosen',
+            'email' => 'dosen@example.com',
+            'password' => Hash::make('dosenstis')
         ]);
     }
 }
